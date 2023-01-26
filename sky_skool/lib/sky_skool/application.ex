@@ -8,6 +8,7 @@ defmodule SkySkool.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      SkySkool.Repo,
       # Starts a worker by calling: SkySkool.Worker.start_link(arg)
       # {SkySkool.Worker, arg}
     ]
